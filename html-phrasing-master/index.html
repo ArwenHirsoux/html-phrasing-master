@@ -89,7 +89,7 @@
         <p>
             On est venus, 500, habillés à la <i lang="en">one-again</i>.
         </p>
-        <p>
+        <p lang="en">
             There is a certain <i>je ne sais quoi</i> in the air.
         </p>
         <div>
@@ -155,9 +155,9 @@
         <!-- Imaginons que quelqu’un regarde un document et fait une recherche sur le mot « chaton ». Le serveur renvoie le document avec un paragraphe modifié comme suit : -->
 
         <p>
-            J'ai aussi quelques <mark>chatons</mark> qui me rendent visite ces jours-ci. Ils sont vraiment mignons. Je crois qu'ils
+            J'ai aussi quelques <mark>chaton</mark>s qui me rendent visite ces jours-ci. Ils sont vraiment mignons. Je crois qu'ils
             aiment mon jardin ! Peut-être que je devrais adopter un <mark>chaton</mark>.
-        </p>
+        </p> 
 
         <!-- u sert à annoter une portion de texte pour correction ultérieure.
         Sa présentation par défaut (mais on peut changer cela par CSS) est un texte souligné.
@@ -201,18 +201,18 @@
             <q>Cueille le jour présent sans te soucier du lendemain</q>.
         </p>
 
-        <!-- ... balise un texte dont on veut changer la direction.
-        Utiliser l’attribut ... pour spécifier le sens de lecture. -->
+        <!-- bdo balise un texte dont on veut changer la direction.
+        Utiliser l’attribut dir pour spécifier le sens de lecture. -->
         <p>
             Ce texte se lit de gauche à droite.
         </p>
         <p>
-            Ce texte se lit de droite à gauche.
+            <bdo dir="rtl">Ce texte se lit de droite à gauche.</bdo>
         </p>
         <p>
             Un palindrome est un texte ou un mot dont l'ordre des lettres reste le même qu'on le lise de gauche à droite
             ou de droite à gauche, comme dans la phrase La mariée ira mal, qui donne, si on la lit de droite à gauche,
-            La mariée ira mal.
+            <bdo dir="rtl">La mariée ira mal.</bdo>
         </p>
 
         <!-- ... sert à baliser un extrait de code -->
@@ -249,12 +249,12 @@
             Pour afficher le panneau de commandes dans SublimeText, pressez simultanément les touches <kbd><kbd>cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd></kbd>.
         </p>
         <p>
-            Confirmez en cliquant sur <kbd>Oui</kbd>.
+            Confirmez en cliquant sur <samp><kbd>Oui</kbd></samp>.
         </p>
 
         <!-- time représente une date, précisée numériquement par l’attribut datetime, au cas où le contenu de la balise pourrait créer des ambiguités. -->
         <p>
-            <time>Hier</time>, j'ai beaucoup travaillé.
+            <time datetime="2014-10-13">Hier</time>, j'ai beaucoup travaillé.
         </p>
 
         <!-- var (« variable ») représente une variable dans une expression mathématique ou un programme.
@@ -270,7 +270,7 @@
         </p>
 
         <!-- progress représente une barre de progression. Il est utilisé pour visualiser l’avancement d’une tâche (ex. barre de chargement).
-        Utiliser les attributs value (obligatoire) et value -->
+        Utiliser les attributs value (obligatoire) et max -->
         <p>
             Progression :
             <progress value="70" max="100"> 70 %</progress>
